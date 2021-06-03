@@ -61,9 +61,18 @@
 					<!-- <a class="nav-item nav-link" href="<?= base_url(); ?>laundry">Daftar Pesanan <span class="sr-only">(current)</span></a> -->
 
 					<div>
-						<a class="nav-item button btn btn-outline-dark" style="border-radius: 100px;" href="<?= base_url() ?>auth">Login<span class="sr-only">(current)</span></a>
+						<!-- <a class="nav-item button btn btn-outline-dark" style="border-radius: 100px;" href="<?= base_url() ?>auth">Login<span class="sr-only">(current)</span></a> -->
 
 						<!-- <a class="nav-item btn btn-primary my-2 my-sm-0 mr-2" href="<?= base_url() ?>auth/register">Register<span class="sr-only">(current)</span></a> -->
+					</div>
+
+					<div>
+						<?php if ($this->session->set_userdata('role_id') == "0") : ?>
+							<li>
+								<a class="nav-item button btn btn-outline-dark" style="border-radius: 100px;" href="<?= base_url() ?>auth">Login<span class="sr-only">(current)</span></a>
+								<a class="nav-link" href="<?php echo base_url('auth/logout'); ?>">Logout</a>
+							</li>
+						<?php endif ?>
 					</div>
 
 				</div>
