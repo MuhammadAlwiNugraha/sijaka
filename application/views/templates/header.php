@@ -14,7 +14,7 @@
 
 
 	.footer {
-		position: relative;
+		position: fixed;
 		left: 0;
 		bottom: 0;
 		width: 100%;
@@ -43,7 +43,7 @@
 
 	<!-- <nav class="navbar navbar-expand-lg navbar-dark bg-dark" style="background-color: #e3f2fd;"> -->
 	<!-- <nav class="navbar navbar-expand-lg sticky-top navbar-light" style=" background-color: #ffc05f;"> -->
-	<nav class="navbar navbar-expand navbar-light topbar mb-4 static-top shadow" style=" background-color: #ffc05f;">
+	<nav class="navbar navbar-expand navbar-light topbar sticky-top mb-4 static-top shadow" style=" background-color: #ffc05f;">
 
 
 		<div class="container ">

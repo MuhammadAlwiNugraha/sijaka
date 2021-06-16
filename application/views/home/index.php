@@ -19,20 +19,23 @@
 	<div class="row mt-5 text-center justify-content-center">
 		<div class="card mr-5" style="border-radius: 15px;box-shadow: 13px 13px 30px 5px #eaeaea;">
 			<div class="card-body p-5">
-				<img src="<?= base_url("assets/img/like.png") ?>" width="100" class="pb-2">
-				<h2>SiJaka</h2>
+				<img src="<?= base_url("assets/img/kendaraan.png") ?>" width="100" class="pb-2">
+				<h4>SiJaka Kendaraan</h4>
+				<button type="submit" name="submit" class="btn btn-primary btn-user btn-block" style=" background-color: #ffc05f;">Submit</button>
 			</div>
 		</div>
 		<div class="card mr-5" style="border-radius: 15px;box-shadow: 13px 13px 30px 5px #eaeaea;">
 			<div class="card-body p-5">
-				<img src="<?= base_url("assets/img/clock.png") ?>" width="100" class="pb-2">
-				<h2>SiJaka</h2>
+				<img src="<?= base_url("assets/img/property.png") ?>" width="100" class="pb-2">
+				<h4>SiJaka Property</h4>
+				<button type="submit" name="submit" class="btn btn-primary btn-user btn-block" style=" background-color: #ffc05f;">Submit</button>
 			</div>
 		</div>
 		<div class="card mr-5" style="border-radius: 15px;box-shadow: 13px 13px 30px 5px #eaeaea;">
 			<div class="card-body p-5">
-				<img src="<?= base_url("assets/img/clean.png") ?>" width="100" class="pb-2">
-				<h2>SiJaka</h2>
+				<img src="<?= base_url("assets/img/dua.png") ?>" width="100" class="pb-2">
+				<h4>SiJaka Duanana</h4>
+				<button type="submit" name="submit" class="btn btn-primary btn-user btn-block" style=" background-color: #ffc05f;">Submit</button>
 			</div>
 		</div>
 	</div>
