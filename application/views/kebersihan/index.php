@@ -29,7 +29,7 @@
 					<div class="card-body">
 
 						<h3><?= $ldr["nama"] ?></h3>
-						<p><?= $ldr["patokan"] ?>, <?= $ldr["alamat"] ?></p>
+						<p><?= $ldr["keterangan"] ?>, <?= $ldr["alamat"] ?></p>
 						<p>kamar : <?= $ldr["kamar"] ?></p>
 						<p>Status : <?= $ldr["status_service"] ?></p>
 						<p>Pembayaran :

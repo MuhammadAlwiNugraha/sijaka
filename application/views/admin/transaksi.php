@@ -30,7 +30,7 @@
 
 						<h3><?php echo $ldr["nama"] ?></h3>
 						<p>Alamat : <?php echo $ldr["alamat"] ?></p>
-						<p>Patokan : <?php echo $ldr["patokan"] ?></p>
+						<p>keterangan : <?php echo $ldr["keterangan"] ?></p>
 						<p>No Hp : <?php echo $ldr["nohp"] ?></p>
 						<p>Jumlah Kamar : <?php echo $ldr["kamar"] ?></p>
 						<?php $tot = ((int)$ldr["kamar"] * (int)('15000')); ?>

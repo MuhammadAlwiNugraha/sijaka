@@ -77,7 +77,7 @@
           <a class="nav-item nav-link" href="<?= base_url(); ?>">Home <span class="sr-only">(current)</span></a>
           <a class="nav-item nav-link" href="<?= base_url(); ?>">SiJaka Kendaraan <span class="sr-only">(current)</span></a>
           <a class="nav-item nav-link" href="<?= base_url(); ?>">SiJaka Property <span class="sr-only">(current)</span></a>
-          <!-- <a class="nav-item nav-link" href="<?= base_url(); ?>laundry">Daftar Pesanan <span class="sr-only">(current)</span></a> -->
+          <!-- <a class="nav-item nav-link" href="<?= base_url(); ?>kebersihan">Daftar Pesanan <span class="sr-only">(current)</span></a> -->
 
           <div>
             <a class="nav-item button btn btn-outline-dark" style="border-radius: 100px;" href="<?= base_url() ?>auth">Login<span class="sr-only">(current)</span></a>
@@ -106,7 +106,7 @@
                   <!-- JUDUL -->
                   <div class="text-center mb-4">
                     <h1 class="mb-1">Login Account</h1>
-                    <!-- <small>Gunakan dan Rasakan <strong>kemudahan</strong> dalam Melaundry di SiJaka</small> -->
+                    <!-- <small>Gunakan dan Rasakan <strong>kemudahan</strong> dalam  SiJaka</small> -->
                   </div>
 
                   <form class="user" method="post" action="<?= base_url("auth") ?>">

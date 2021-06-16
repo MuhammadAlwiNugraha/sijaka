@@ -1,9 +1,9 @@
 <script>
-  <?php if ($this->session->userdata('role_id') == "2") { ?>
+  <?php if ($this->session->userdata('role_id') == "1") { ?>
 
     $ss == Admin;
 
-  <?php } else if ($this->session->userdata('role_id') == "1") { ?>
+  <?php } else if ($this->session->userdata('role_id') == "2") { ?>
 
     $ss == < a > "Admin" < /a>;
 

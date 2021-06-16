@@ -51,7 +51,7 @@
 
 	<!-- <div class="row mt-5">
 
-		<?php foreach ($laundry as $ldr) : ?>
+		<?php foreach ($kebersihan as $ldr) : ?>
 			
 			<?php if ($ldr["ulasan"] == "") : ?>
 				

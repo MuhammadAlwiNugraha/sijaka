@@ -7,7 +7,7 @@
 				<h1 class="mb-5" style="color: grey;text-align: center">Update Status by Admin</h1>
 
 				<div class="card">
-					<div class="card-header" style="background-color: grey;color: white"><?= $laundry["kode_transaksi"] ?> a/n <?= $laundry["nama"] ?></div>
+					<div class="card-header" style="background-color: grey;color: white"><?= $kebersihan["kode_transaksi"] ?> a/n <?= $kebersihan["nama"] ?></div>
 
 					<div class="card-body">
 
@@ -29,11 +29,11 @@
 
 						<div class="form-group">
 
-							<input type="hidden" name="id" id="id" value="<?= $laundry["id"] ?>">
+							<input type="hidden" name="id" id="id" value="<?= $kebersihan["id"] ?>">
 
 							<select class="custom-select" name="status_service" id="status_service">
 
-								<option value="<?= $laundry["status_service"] ?>"><?= $laundry["status_service"] ?></option>
+								<option value="<?= $kebersihan["status_service"] ?>"><?= $kebersihan["status_service"] ?></option>
 								<option value="Tunggu sebentar ya">Tunggu sebentar ya</option>
 								<option value="Service Selesai">Service Selesai</option>
 

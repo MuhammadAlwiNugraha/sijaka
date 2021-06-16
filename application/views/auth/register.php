@@ -77,7 +77,7 @@
           <a class="nav-item nav-link" href="<?= base_url(); ?>">Home <span class="sr-only">(current)</span></a>
           <a class="nav-item nav-link" href="<?= base_url(); ?>">SiJaka Kendaraan <span class="sr-only">(current)</span></a>
           <a class="nav-item nav-link" href="<?= base_url(); ?>">SiJaka Property <span class="sr-only">(current)</span></a>
-          <!-- <a class="nav-item nav-link" href="<?= base_url(); ?>laundry">Daftar Pesanan <span class="sr-only">(current)</span></a> -->
+          <!-- <a class="nav-item nav-link" href="<?= base_url(); ?>kebersihan">Daftar Pesanan <span class="sr-only">(current)</span></a> -->
 
           <div>
             <a class="nav-item button btn btn-outline-dark" style="border-radius: 100px;" href="<?= base_url() ?>auth">Login<span class="sr-only">(current)</span></a>

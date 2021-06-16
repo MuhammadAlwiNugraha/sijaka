@@ -31,8 +31,8 @@
 						</div>
 
 						<div class="form-group">
-							<label for="patokan">Patokan : </label><br>
-							<input type="text" name="patokan" class="form-control" id="patokan">
+							<label for="keterangan">keterangan : </label><br>
+							<input type="text" name="keterangan" class="form-control" id="keterangan">
 						</div>
 
 						<div class="form-group">
@@ -66,7 +66,7 @@
 						</div>
 
 						<div class="form-group">
-							<input type="hidden" name="status_service" class="form-control" id="status_service" value="Pengambilan Laundry">
+							<input type="hidden" name="status_service" class="form-control" id="status_service" value="Pengambilan ">
 						</div>
 
 
