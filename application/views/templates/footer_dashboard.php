@@ -2,13 +2,20 @@
 <!-- End of Main Content -->
 
 <!-- Footer -->
-<footer class="sticky-footer bg-white">
-  <div class="container my-auto">
-    <div class="copyright text-center my-auto">
-      <span>Copyright &copy; <a href="https://www.instagram.com/budhilhr/" target="_blank">SiJaka</a> 2021</span>
+<footer class=" bg-white">
+  <nav class="navbar navbar-expand navbar-light topbar shadow" style=" background-color: #ffc05f;">
+    <div class="container my-auto">
+      <div class="utas">
+        <p>SiJaka @ 2021</p>
+        <!-- <div class="copyright text-center my-auto">
+          <span>Copyright &copy; <a target="_blank">SiJaka</a> 2021</span>
+        </div> -->
+      </div>
     </div>
-  </div>
 </footer>
+
+
+<!-- Boots
 <!-- End of Footer -->
 
 </div>
@@ -51,6 +58,30 @@
 <!-- Custom scripts for all pages-->
 <script src="<?= base_url("assets/") ?>js/sb-admin-2.min.js"></script>
 
+<script>
+  $('.custom-file-input').on('change', function() {
+    let fileName = $(this).val().split('\\').pop();
+    $(this).next('.custom-file-label').addClass("selected").html(fileName);
+  });
+
+
+
+  // $('.form-check-input').on('click', function() {
+  //   const menuId = $(this).data('menu');
+  //   const roleId = $(this).data('role');
+
+  //   $.ajax({
+  //     url: "<?= base_url('user/edit'); ?>",
+  //     type: 'post',
+  //     data: {
+  //       menuId: menuId,
+  //       roleId: roleId
+  //     },
+  //     success: function() {
+  //       document.location.href = "<?= base_url('user/edit'); ?>" + roleId;
+  //     }
+  //   });
+</script>
 </body>
 
 </html>

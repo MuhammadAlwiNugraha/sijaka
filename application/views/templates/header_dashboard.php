@@ -1,5 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
+<style>
+  .footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #ffc05f;
+    color: #000000;
+    text-align: center;
+  }
+
+  .utas {
+
+    left: 0;
+    bottom: 0;
+    width: 100%;
+
+    color: #000000;
+    text-align: center;
+  }
+</style>
 
 <head>
 

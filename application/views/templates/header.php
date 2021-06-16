@@ -14,7 +14,7 @@
 
 
 	.footer {
-		position: fixed;
+		position: relative;
 		left: 0;
 		bottom: 0;
 		width: 100%;
@@ -42,7 +42,9 @@
 <body>
 
 	<!-- <nav class="navbar navbar-expand-lg navbar-dark bg-dark" style="background-color: #e3f2fd;"> -->
-	<nav class="navbar navbar-expand-lg sticky-top navbar-light" style=" background-color: #ffc05f;">
+	<!-- <nav class="navbar navbar-expand-lg sticky-top navbar-light" style=" background-color: #ffc05f;"> -->
+	<nav class="navbar navbar-expand navbar-light topbar mb-4 static-top shadow" style=" background-color: #ffc05f;">
+
 
 		<div class="container ">
 
@@ -61,19 +63,19 @@
 					<!-- <a class="nav-item nav-link" href="<?= base_url(); ?>laundry">Daftar Pesanan <span class="sr-only">(current)</span></a> -->
 
 					<div>
-						<!-- <a class="nav-item button btn btn-outline-dark" style="border-radius: 100px;" href="<?= base_url() ?>auth">Login<span class="sr-only">(current)</span></a> -->
+						<a class="nav-item button btn btn-outline-dark" style="border-radius: 100px;" href="<?= base_url() ?>auth">Login<span class="sr-only">(current)</span></a>
 
 						<!-- <a class="nav-item btn btn-primary my-2 my-sm-0 mr-2" href="<?= base_url() ?>auth/register">Register<span class="sr-only">(current)</span></a> -->
 					</div>
 
-					<div>
+					<!-- <div>
 						<?php if ($this->session->set_userdata('role_id') == "0") : ?>
 							<li>
 								<a class="nav-item button btn btn-outline-dark" style="border-radius: 100px;" href="<?= base_url() ?>auth">Login<span class="sr-only">(current)</span></a>
 								<a class="nav-link" href="<?php echo base_url('auth/logout'); ?>">Logout</a>
 							</li>
 						<?php endif ?>
-					</div>
+					</div> -->
 
 				</div>
 			</div>

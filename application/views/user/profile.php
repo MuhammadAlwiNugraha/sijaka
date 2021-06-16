@@ -7,8 +7,8 @@
             <div class="row no-gutters">
 
               <!-- <div class="col-md-3">
-                  <img src="<?= base_url("assets/img/") . $user["image"] ?>" class="card-img pt-3 pb-3">
-                </div>  -->
+                <img src="<?= base_url("assets/img/") . $user["image"] ?>" class="card-img pt-3 pb-3">
+              </div> -->
 
               <div class="col-md-8">
                 <div class="card-body">
@@ -33,6 +33,14 @@
                     <p class="card-text">
                       <i class="fas fa-fw fa-phone"></i>
                       <?= $user["nohp"] ?>
+                    </p>
+                  </div>
+
+                  <div>
+                    <p class="card-text">
+                    <div class="col-md-4">
+                      <img src="<?= base_url('assets/img/profile/') . $user['image']; ?>" class="card-img">
+                    </div>
                     </p>
                   </div>
 

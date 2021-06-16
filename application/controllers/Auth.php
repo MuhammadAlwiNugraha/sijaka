@@ -109,6 +109,7 @@ class Auth extends CI_Controller
 				'image' => "default.jpg",
 				'password' => password_hash($this->input->post('password1'), PASSWORD_DEFAULT), //enskripsi hash
 				'role_id' => 2, //mamber
+				'image' => 'default.jpg',
 				//'is_active' => 0, //tidak aktif
 				'date_created' => date("d/m/Y")
 			];
@@ -145,35 +146,4 @@ class Auth extends CI_Controller
 		$this->load->view("auth/blocked");
 		$this->load->view("templates/footer_dashboard", $data);
 	}
-
-	// private function _sendEmail(){
-	// 	$config = [
-	// 		'protocol' => 'smtp',
-	// 		'smtp_host' => 'ssl://smtp.googlemail.com',
-	// 		'smtp_user' => 'itprenuer.unsika@gmail.com',
-	// 		'smtp_pass' => '1234567890',
-	// 		'smtp_port' => 465,
-	// 		'mailtype' => 'html',
-	// 		'charset' => 'utf-8',
-	// 		'newline' => "\r\n"
-	// 	];
-
-	// 	$this->load->library('email', $config);
-	// 	$this->email->initialize($config);
-
-	// 	$this->email->from('itprenuer.unsika@gmail.com', 'ITPreneur Unsika');
-	// 	$this->email->to('muhammadbudhil00@gmail.com'); // post email
-	// 	$this->email->subject('Aktivasi');
-	// 	$this->email->message('Silahkan aktivasi akun disini');
-
-	// 	if ($this->email->send()) {
-	// 		return true;
-	// 	} else {
-	// 		echo $this->email->print_debugger();
-	// 		die;
-	// 	}
-
-	// }
-
-
 }

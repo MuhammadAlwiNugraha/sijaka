@@ -21,12 +21,10 @@ class User extends CI_Controller
 	{
 		$data["title"] = "Dashboard";
 
-		$data["user"] = $this->db->get_where('user', ['email' =>
-		$this->session->userdata("email")])->row_array();
+		$data["user"] = $this->db->get_where('user', ['email' => $this->session->userdata("email")])->row_array();
 
 		//$user = ['nama', $this->session->userdata("nama")];
 		$data["welcome"] = $data["user"]["nama"];
-
 		$data['kebersihan'] = $this->Kebersihan_model->getAllKebersihanByName();
 
 		$this->load->view("templates/header_dashboard", $data);
@@ -79,6 +77,7 @@ class User extends CI_Controller
 	public function edit()
 	{
 
+
 		$data["title"] = "Edit Profile";
 		$data["user"] = $this->db->get_where('user', ['email' => $this->session->userdata("email")])->row_array();
 		$data["welcome"] = $data["user"]["nama"];
@@ -97,12 +96,56 @@ class User extends CI_Controller
 			$this->load->view("user/edit", $data);
 			$this->load->view("templates/footer_dashboard", $data);
 		} else {
+
+			$upload_image = $_FILES['image'];
+
+
+			if ($upload_image) {
+				$config['allowed_types'] = 'gif|jpg|png';
+				$config['max_size']      = '2048';
+				$config['upload_path'] = './assets/img/profile/';
+
+				$this->load->library('upload', $config);
+
+				if ($this->upload->do_upload('image')) {
+					$old_image = $data['user']['image'];
+					if ($old_image != 'default.jpg') {
+						unlink(FCPATH . 'assets/img/profile/' . $old_image);
+					}
+					$new_image = $this->upload->data('file_name');
+					$this->db->set('image', $new_image);
+				} else {
+					echo $this->upload->dispay_errors();
+				}
+			}
+
 			//BERHASIL
+			$this->db->set('nama', $nama);
+			$this->db->where('email', $email);
+			$this->db->update('user');
 			$this->Kebersihan_model->ubahDataProfile();
 			$this->session->set_flashdata('message', 'Data Berhasil Diubah');
 			redirect('user/edit');
 		}
 	}
+
+	// public function unggah()
+	// {
+	// 	$config['upload_path']          = './assets/img/profile/';
+	// 	$config['allowed_types']        = 'gif|jpg|png';
+	// 	$config['max_size']             = 2048;
+	// 	$config['max_width']            = 1024;
+	// 	$config['max_height']           = 768;
+
+	// 	$this->load->library('upload', $config);
+
+	// 	if (!$this->upload->do_upload('image')) {
+	// 		echo $this->upload->dispay_errors();
+	// 	} else {
+	// 		$datas = array('iamge' => $this->upload->data());
+	// 		echo $datas;
+	// 	}
+	// }
 
 	public function konfirmasi($id)
 	{

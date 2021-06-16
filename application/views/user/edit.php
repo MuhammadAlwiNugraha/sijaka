@@ -47,12 +47,29 @@
 							<input type="text" name="nohp" class="form-control" id="nohp" value="<?= $user["nohp"] ?>">
 						</div>
 
+						<div class="form-group row">
+							<div class="col-sm-2">Picture</div>
+							<div class="col-sm-10">
+								<div class="row">
+									<div class="col-sm-3">
+										<?php echo form_open_multipart('User/unggah'); ?>
+										<img src="<?= base_url('assets/img/profile/') . $user['image']; ?>" class="img-thumbnail">
+									</div>
+									<div class="col-sm-9">
+										<div class="custom-file">
+											<input type="file" class="custom-file-input" id="image" name="image">
+											<label class="custom-file-label" for="image">Choose file</label>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
 
 					</div> <!-- card body -->
 
 				</div> <!-- card -->
 
-				<button type="submit" class="btn btn-primary form-control mt-3" style="box-shadow: 5px 10px 30px grey;margin-bottom: 100px">Update</button>
+				<button type="submit" value="upload" class="btn btn-primary form-control mt-3" style="box-shadow: 5px 10px 30px grey;margin-bottom: 100px">Update</button>
 
 			</form>
 		</div>
