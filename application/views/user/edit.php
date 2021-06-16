@@ -47,7 +47,7 @@
 							<input type="text" name="nohp" class="form-control" id="nohp" value="<?= $user["nohp"] ?>">
 						</div>
 
-						<div class="form-group row">
+						<!-- <div class="form-group row">
 							<div class="col-sm-2">Picture</div>
 							<div class="col-sm-10">
 								<div class="row">
@@ -63,7 +63,7 @@
 									</div>
 								</div>
 							</div>
-						</div>
+						</div> -->
 
 					</div> <!-- card body -->
 

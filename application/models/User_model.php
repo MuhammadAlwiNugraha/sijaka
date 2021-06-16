@@ -9,7 +9,7 @@ class User_model extends CI_Model
 			'nama' => $this->input->post('nama', true),
 			'alamat' => $this->input->post('alamat', true),
 			'email' => $this->input->post('email', true),
-			'nohp' => $this->input->post('nohp', true),
+			'nohp' => $this->input->post('nohp', true)
 
 		];
 
