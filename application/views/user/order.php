@@ -41,11 +41,11 @@
 						</div>
 
 						<div class="form-group">
-							<label for="keterangan">keterangan : </label><br>
+							<label for="keterangan"> Keterangan : </label><br>
 							<input type="text" name="keterangan" class="form-control" id="keterangan">
 						</div>
 
-						<div class="form-group">
+						<div class=" form-group">
 							<label for="nohp">No. Hp : </label><br>
 							<input type="text" name="nohp" class="form-control" id="nohp" value="<?= $user["nohp"] ?>">
 						</div>

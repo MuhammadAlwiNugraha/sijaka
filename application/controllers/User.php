@@ -198,7 +198,7 @@ class User extends CI_Controller
 		$data['kebersihan'] = $this->Kebersihan_model->getAllKebersihanById($id);
 
 		$this->form_validation->set_rules('alamat', 'Alamat', 'required|max_length[30]');
-		$this->form_validation->set_rules('keterangan', 'Keterangan', 'required|max_length[20]');
+		$this->form_validation->set_rules('keterangan', 'Keterangan', 'required|max_length[150]');
 		$this->form_validation->set_rules('nohp', 'No Hp', 'required|max_length[15]');
 		$this->form_validation->set_rules('kamar', 'Kamar', 'required|max_length[10]');
 

@@ -30,7 +30,7 @@ class Kebersihan_model extends CI_Model
 			'kode_transaksi' => $this->input->post('kode_transaksi', true),
 			'nama' => $this->input->post('nama', true),
 			'alamat' => $this->input->post('alamat', true),
-			'patokan' => $this->input->post('patokan', true),
+			'keterangan' => $this->input->post('keterangan', true),
 			'nohp' => $this->input->post('nohp', true),
 			'kamar' => $this->input->post('kamar', true),
 			'status_service' => $this->input->post('status_service', true),
@@ -102,7 +102,7 @@ class Kebersihan_model extends CI_Model
 	{
 		$data = [
 			'alamat' => $this->input->post('alamat', true),
-			'patokan' => $this->input->post('patokan', true),
+			'keterangan' => $this->input->post('keterangan', true),
 			'nohp' => $this->input->post('nohp', true),
 			'kamar' => $this->input->post('kamar', true)
 		];
