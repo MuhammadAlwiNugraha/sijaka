@@ -2,7 +2,8 @@
 	<div class="row mt-3 justify-content-center">
 		<div class="col-md-6">
 
-			<form action="<?= base_url('admin/edit_status') ?>" method="post">
+			<!-- <form action="<?= base_url('admin/edit_status') ?>" method="post"> -->
+			<form action="" method="post">
 
 				<h1 class="mb-5" style="color: grey;text-align: center">Update Status by Admin</h1>
 

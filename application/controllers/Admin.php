@@ -48,16 +48,17 @@ class Admin extends CI_Controller
 		$this->load->view("templates/footer_dashboard", $data);
 	}
 
+
 	public function edit_status($id)
 	{
 		$data["title"] = "Edit Status by Admin";
 
 		$data["user"] = $this->db->get_where('user', ['email' => $this->session->userdata("email")])->row_array();
 
-		$data["welcome"] = $data["user"]["nama"];
+		// $data["welcome"] = $data["user"]["nama"];
 
 		$data['kebersihan'] = $this->Admin_model->getAllKebersihanById($id);
-
+		// $data['kebersihan'] = $this->Kebersihan_model->getAllKebersihanById($id);
 		$this->form_validation->set_rules('status', 'Status Service', 'max_length[20]');
 
 		if ($this->form_validation->run() == FALSE) {
@@ -71,6 +72,7 @@ class Admin extends CI_Controller
 		} else {
 			//BERHASIL
 			$this->Admin_model->ubahStatusbyAdmin();
+			// $this->Kebersihan_model->ubahStatusbyMitra();
 			$this->session->set_flashdata('message', 'Ubah Data Berhasil');
 			redirect('admin/transaksi');
 		}

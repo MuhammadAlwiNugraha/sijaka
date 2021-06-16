@@ -29,9 +29,7 @@ class Admin_model extends CI_Model
 
 	public function ubahStatusbyAdmin()
 	{
-		$data = [
-			'status_service' => $this->input->post('status_service', true)
-		];
+		$data = ['status_service' => $this->input->post('status_service', true)];
 
 		$this->db->where('id', $this->input->post('id'));
 		$this->db->update('kebersihan', $data);

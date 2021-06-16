@@ -35,6 +35,7 @@
 						<p>Jumlah Kamar : <?php echo $ldr["kamar"] ?></p>
 						<?php $tot = ((int)$ldr["kamar"] * (int)('15000')); ?>
 						<p>Tagihan : <?php echo $tot ?></p>
+
 						<p>Status Pembayaran :
 
 							<?php if ($ldr["status_pembayaran"] == "Belum Bayar") : ?>
@@ -57,18 +58,15 @@
 						<?php elseif ($ldr["status_service"] == "Cancel") : ?>
 
 							<p class="alert alert-danger">Pesanan dibatalkan</p>
-
-						<?php elseif ($ldr["status_service"] == "Service Selesai") : ?>
-
-							<p>Status Service : Diterima</p>
+							<a href="<?= base_url() ?>admin/edit_status/<?= $ldr["id"] ?>" class="btn btn-warning">Edit Status</a>
 
 						<?php elseif ($ldr["status_service"] == "Tunggu sebentar ya") : ?>
 
 							<p class="alert alert-primary">Pesanan Baru</p>
+							<a href="<?= base_url() ?>admin/edit_status/<?= $ldr["id"] ?>" class="btn btn-warning">Edit Status</a>
 
 						<?php endif; ?>
-
-
+						<a href="<?= base_url() ?>admin/hapus/<?= $ldr["id"] ?>" class="btn btn-outline-danger" onclick="return confirm('Yakin?');">Delete</a>
 					</div>
 				</div>
 
