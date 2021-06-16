@@ -21,6 +21,9 @@
 			<div class="card-body p-5">
 				<img src="<?= base_url("assets/img/kendaraan.png") ?>" width="100" class="pb-2">
 				<h4>SiJaka Kendaraan</h4>
+				<p>
+					Lorem ipsum dolor sit amet
+				</p>
 				<button type="submit" name="submit" class="btn btn-primary btn-user btn-block" style=" background-color: #ffc05f;">Submit</button>
 			</div>
 		</div>
@@ -28,6 +31,9 @@
 			<div class="card-body p-5">
 				<img src="<?= base_url("assets/img/property.png") ?>" width="100" class="pb-2">
 				<h4>SiJaka Property</h4>
+				<p>
+					Lorem ipsum dolor sit amet
+				</p>
 				<button type="submit" name="submit" class="btn btn-primary btn-user btn-block" style=" background-color: #ffc05f;">Submit</button>
 			</div>
 		</div>
@@ -35,6 +41,9 @@
 			<div class="card-body p-5">
 				<img src="<?= base_url("assets/img/dua.png") ?>" width="100" class="pb-2">
 				<h4>SiJaka Duanana</h4>
+				<p>
+					Lorem ipsum dolor sit amet
+				</p>
 				<button type="submit" name="submit" class="btn btn-primary btn-user btn-block" style=" background-color: #ffc05f;">Submit</button>
 			</div>
 		</div>
